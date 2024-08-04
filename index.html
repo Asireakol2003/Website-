@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">My Experience</a></li>
+                <li><a href="#learned">What I've Learned</a></li>
+                <li><a href="#next-step">My Next Step</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <a href="#" class="logo">Portfolio</a>
+                <div class="toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <section class="banner" id="banner">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="image1.jpg" alt="Erisa Meta">
+                    </div>
+                    <h3>Erisa Meta</h3>
+                    <p>I'm a person who loves coding</p>
+                    <a href="#" class="btn">Download My CV</a>
+                    <ul class="socialMedia">
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- About Me -->
+            <section class="about" id="about">
+                <div class="title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="content">
+                    <div class="textBox">
+                        <p>Hello, I'm Erisa, a 20-year-old aspiring software developer from Albania. 
+                        I have completed high school and am currently exploring my path toward becoming a software developer. 
+                        Although I've tried other jobs, I haven't found them as fulfilling because my true passion lies in technology and creating software solutions.<br><br>
+                        I'm excited to learn new programming languages, work on innovative projects, and eventually make a meaningful impact in the tech industry. 
+                        I'm eager to begin this journey and look forward 
+                        to the opportunities that lie ahead.</p>
+                    </div>
+                    <div class="imgBx">
+                        <img src="second photo.jpg" alt="Erisa">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section class="experience" id="experience">
+                <div class="title">
+                    <h2>My Experience</h2>
+                </div>
+                <div class="content">
+                    <p>During my time as a customer service representative in Albania, I honed my communication and problem-solving skills. 
+                        Working with a diverse clientele taught me empathy, patience, and adaptability. 
+                        These skills were crucial in ensuring customer satisfaction and resolving issues effectively.</p>
+
+                    <p>In London, I gained valuable experience as a waiter in a bustling restaurant. This role required excellent organizational skills, 
+                        attention to detail, and the ability to work under pressure. Serving customers in a fast-paced environment 
+                        enhanced my teamwork and multitasking abilities.</p>
+                </div>
+            </section>
+
+            <!-- What I've Learned -->
+            <section class="learned" id="learned">
+                <div class="title">
+                    <h2>What I've Learned</h2>
+                </div>
+                <div class="content">
+                    <p>In my journey to becoming a software developer, I have learned how to create responsive websites using HTML and CSS,
+                         ensuring they look great on any device. Through kata training on Codewars, I have honed my skills in writing programs in JavaScript, 
+                         which has also helped me build simple games using vanilla HTML, CSS, and JavaScript. I have become proficient in using Visual Studio Code (VS Code) 
+                         as my primary code editor, taking advantage of its powerful features and extensions to enhance productivity. Additionally, I have gained experience in 
+                         using GitHub for version control and collaboration, which allows me to manage code efficiently and work effectively with others.</p>
+                </div>
+            </section>
+
+            <!-- My Next Step -->
+            <section class="next-step" id="next-step">
+                <div class="title">
+                    <h2>My Next Step</h2>
+                </div>
+                <div class="content">
+                    <p>I have now learned to make responsive webpage in HTML and CSS and interactive content to create a game using JavaScript.
+                        I am beginning to understand how these can be built to suit a bespoke solution for myself.My next step will be to build 
+                        a simple game that is almost entirely my creation.</p>
+                </div>
+            </section>
+
+            <!-- Contact Me -->
+            <section class="contact" id="contact">
+                <div class="title">
+                    <h2>LET'S SAY HI </h2>
+                </div>
+                <div class="content">
+                    <p></p>
+                </div>
+                <div class="contactForm">
+                    <div class="row">
+                      <input type="text" name="first_name" placeholder="First Name">
+                      <input type="text" name="last_name" placeholder="Last Name">
+                    </div>
+                    <div class="row">
+                      <input type="email" name="email" placeholder="Email Address">
+                      <input type="tel" name="phone" placeholder="Mobile phone">
+                    </div>
+                    <div class="row2">
+                      <textarea name="message" placeholder="Message"></textarea> 
+                    </div>
+                    <div class="row2">
+                      <input type="submit" value="Send">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let topbar = document.querySelector('.topbar');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function () {
+            toggle.classList.toggle('active');
+            topbar.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
